@@ -1,163 +1,156 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+    <meta charset=”utf-8”> 
+
+    <script src="jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src=”js/bootstrap.js”></script>
+
+    <script>
+        $(function () {
+            var includes = $('[data-include]')
+            $.each(includes, function () {
+                var file = 'views/' + $(this).data('include') + '.html'
+                $(this).load(file)
+            })
+        })
+    </script>
 
     <title>Richard Hofmeister @ people.redhat.com</title>
-    <link rel="icon" href="https://igdevredhat.blob.core.windows.net/themes/dmc-igloo-production-theme/images/favicon.png" type="image/x-icon">
+    <link rel="icon"
+        href="https://igdevredhat.blob.core.windows.net/themes/dmc-igloo-production-theme/images/favicon.png"
+        type="image/x-icon">
 
+    <style>
+        .centered {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+		table {
+			border:1px solid #b3adad;
+			border-collapse:collapse;
+			padding:5px;
+		}
+        
+		table th {
+			border:1px solid #b3adad;
+			padding:5px;
+			background: #f0f0f0;
+			color: #313030;
+		}
+        table td {
+			border:1px solid #b3adad;
+			text-align:center;
+			padding:5px;
+			background: #ffffff;
+			color: #313030;
+		}
+
+
+    </style>
 </head>
 
-<body class="c7">
-    <p class="c4"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 260.00px; height: 61.48px;"><img
-                alt="" src="images/image1.png"
-                style="width: 260.00px; height: 61.48px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
+<body>
 
-    <p class="c4"><span class="h4">The 5 week agenda is:</span></p>
-    <p class="c2"><span class="c13"></span></p><a id="t.88f3698b5a9ed91edee83a6e0ce9814a58856991"></a><a id="t.1"></a>
-    <table class="c16">
-        <tbody>
-            <tr class="c9">
-                <td class="c6" colspan="1" rowspan="1">
-                    <p class="c1"><span class="c0">Date</span></p>
-                </td>
-                <td class="c12" colspan="1" rowspan="1">
-                    <p class="c1"><span class="c0">Topic</span></p>
-                </td>
-                <td class="c15" colspan="1" rowspan="1">
-                    <p class="c1"><span class="c0">Presenter</span></p>
-                </td>
-                <td class="c14" colspan="1" rowspan="1">
-                    <p class="c1"><span class="c0">Presentation</span></p>
-                </td>
-                <td class="c14" colspan="1" rowspan="1">
-                    <p class="c1"><span class="c0">Recording</span></p>
-                </td>
+    <br />
 
-            </tr>
-            <tr class="c9">
-                <td class="c6" colspan="1" rowspan="1">
-                    <p class="c1"><span class="c0">Feb 24, 2022</span></p>
-                </td>
-                <td class="c12" colspan="1" rowspan="1">
-                    <p class="c1"><span class="c0">Automation in the Enterprise</span></p>
-                </td>
-                <td class="c15" colspan="1" rowspan="1">
-                    <p class="c1"><span class="c0">Ashton Davis</span></p>
-                </td>
-                <td class="c14" colspan="1" rowspan="1">
-                    <p class="c1"><span class="c11"><a class="c10"
-                        href="">NA</a></span>
-                    </p>
-                <td class="c14" colspan="1" rowspan="1">
-                    <p class="c1"><span class="c11"><a class="c10"
-                                href="">NA</a></span>
-                    </p>
-                </td>
-                
-           </tr>
-           <tr class="c9">
-            <td class="c6" colspan="1" rowspan="1">
-                <p class="c1"><span class="c0">March 3, 2022</span></p>
-            </td>
-            <td class="c12" colspan="1" rowspan="1">
-                <p class="c1"><span class="c0">Execution Environments - what are they and why should I care</span></p>
-            </td>
-            <td class="c15" colspan="1" rowspan="1">
-                <p class="c1"><span class="c0">Brian Dumont</span></p>
-            </td>
-            <td class="c14" colspan="1" rowspan="1">
-                <p class="c1"><span class="c11"><a class="c10"
-                    href="">NA</a></span>
-                </p>
-            <td class="c14" colspan="1" rowspan="1">
-                <p class="c1"><span class="c11"><a class="c10"
-                            href="">NA</a></span>
-                </p>
-            </td>
-            
-       </tr>
-       <tr class="c9">
-        <td class="c6" colspan="1" rowspan="1">
-            <p class="c1"><span class="c0">March 10, 2022</span></p>
-        </td>
-        <td class="c12" colspan="1" rowspan="1">
-            <p class="c1"><span class="c0">Private Automation Hubs - How do they work and how should you use them</span></p>
-        </td>
-        <td class="c15" colspan="1" rowspan="1">
-            <p class="c1"><span class="c0">Jay Ryan</span></p>
-        </td>
-        <td class="c14" colspan="1" rowspan="1">
-            <p class="c1"><span class="c11"><a class="c10"
-                href="">NA</a></span>
-            </p>
-        <td class="c14" colspan="1" rowspan="1">
-            <p class="c1"><span class="c11"><a class="c10"
-                        href="">NA</a></span>
-            </p>
-        </td>
+    <p class="centered">
+        <img src="/icons/headshot.jpg" width="313" height="300">
+    </p>
+    <h1 class="centered">Richard Hofmeister</h1>
+    <h4 class="centered">Senior App Dev Solutions Architect :: hofmeister@redhat.com :: 517-927-6303</h4>
+    <h4 class="centered">LinkedIn :: <a href="https://www.linkedin.com/in/richard-hofmeister/">Richard Hofmeister</a></h4>
+
+    <hr />
+
+    <!-- <div class="row" style="text-align: center;">
+        <div class="span4">
+        <p>CONTENT PLACEHOLDER1</p>
         
-   </tr>
-   <tr class="c9">
-    <td class="c6" colspan="1" rowspan="1">
-        <p class="c1"><span class="c0">March 17, 2022</span></p>
-    </td>
-    <td class="c12" colspan="1" rowspan="1">
-        <p class="c1"><span class="c0">Automation Mesh - Scaling Challenges and Process Isolation</span></p>
-    </td>
-    <td class="c15" colspan="1" rowspan="1">
-        <p class="c1"><span class="c0">Brad Krumme</span></p>
-    </td>
-    <td class="c14" colspan="1" rowspan="1">
-        <p class="c1"><span class="c11"><a class="c10"
-            href="">NA</a></span>
-        </p>
-    <td class="c14" colspan="1" rowspan="1">
-        <p class="c1"><span class="c11"><a class="c10"
-                    href="">NA</a></span>
-        </p>
-    </td>
-    
-</tr>
-<tr class="c9">
-    <td class="c6" colspan="1" rowspan="1">
-        <p class="c1"><span class="c0">March 24, 2022</span></p>
-    </td>
-    <td class="c12" colspan="1" rowspan="1">
-        <p class="c1"><span class="c0">Ansible Operator for OpenShift</span></p>
-    </td>
-    <td class="c15" colspan="1" rowspan="1">
-        <p class="c1"><span class="c0">Mark Hooper</span></p>
-    </td>
-    <td class="c14" colspan="1" rowspan="1">
-        <p class="c1"><span class="c11"><a class="c10"
-            href="">NA</a></span>
-        </p>
-    <td class="c14" colspan="1" rowspan="1">
-        <p class="c1"><span class="c11"><a class="c10"
-                    href="">NA</a></span>
-        </p>
-    </td>
-    
-</tr>
-        </tbody>
+        <p>CONTENT PLACEHOLDER2</p>
+        </div>
+        <div class="span8">
+        <p>CONTENT PLACEHOLDER3</p>
+        
+        <p>CONTENT PLACEHOLDER4</p>
+        </div>
+        </div>        
+                 -->
+        
+    <script src="b.js"></script>
+
+    <br/>
+
+    <table class="centered">
+        <tr>
+           <th>Quarter</th>
+           <th>Speaker</th>
+           <th>Topic</th>
+           <th>Slide Deck</th>
+        </tr>
+        <tr>
+           <td rowspan = "5">Q4 - 2022</td>
+        </tr>
+        <tr>
+            <td>Richard Hofmeister</td>
+            <td>Application Modernization With Konveyor</td>
+            <td>pdf</td>
+         </tr>
+         <tr>
+            <td>Brian Dumont</td>
+            <td>Row 2 Cell 3</td>
+            <td>pdf</td>
+         </tr>
+         <tr>
+            <td>Patrick Regan</td>
+            <td>RHEL 9</td>
+            <td><a href=rhug/q2.2022/AAP-clustered-HA-postgresql.pdf>pdf</a></td>
+         </tr>
+         <tr>
+            <td>Brad Krumme</td>
+            <td>Enterprise Architecture Patterns</td>
+            <td>pdf</td>
+         </tr>
     </table>
-    <p class="c2"><span class="c0"></span></p>
-    <p class="c2"><span class="c0"></span></p>
-    <p class="c2"><span class="c0"></span></p>    
-    <p class="c1"><span class="c11"><a class="c10"
-        href="https://primetime.bluejeans.com/a2m/register/stbvhebg">Please visit this link to register</a></span>
 
-    <p class="c2"><span class="c0"></span></p>
-    <p class="c2"><span class="c0"></span></p>
-    <p class="c2"><span class="c0"></span></p>
-    <p class="c1"><span class="c11"><a class="c10"
-        href="https://people.redhat.com/bdumont/Central-Region-Lunch-n-Learns/legacy-index.html">Please visit this link for the content from the Lunch and Learn Series from April 2020 to March 2021</a></span>
+    <br/>
 
-    <p class="c2"><span class="c0"></span></p>
-    <p class="c2"><span class="c0"></span></p>
+    <table class="centered">
+        <tr>
+           <th>Quarter</th>
+           <th>Speaker</th>
+           <th>Topic</th>
+           <th>Slide Deck</th>
+        </tr>
+         <tr>
+            <td rowspan = "5">Q3 - 2022</td>
+         </tr>
+         <tr>
+             <td>Brian Dumont</td>
+             <td>Row 2 Cell 3</td>
+             <td>pdf</td>
+          </tr>
+          <tr>
+             <td>Alan Patrick</td>
+             <td>Row 2 Cell 3</td>
+             <td>pdf</td>
+          </tr>
+          <tr>
+             <td>Jay Ryan</td>
+             <td>Row 2 Cell 3</td>
+             <td><a href=rhug/q2.2022/AAP-clustered-HA-postgresql.pdf>pdf</a></td>
+          </tr>
+          <tr>
+             <td>David Brugger</td>
+             <td>Empowering Event Driven Architectures Across the Hybrid Cloud</td>
+             <td><a href="../rhug/q3.2022/RHUG Event Driven Architecture, July 2022.pdf">pdf</a></td>
+          </tr>
+          
+    </table>
 
 </body>
-
 </html>
