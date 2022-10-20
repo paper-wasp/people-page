@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset=”utf-8”> 
+    <meta charset=”utf-8”>
 
     <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src=”js/bootstrap.js”></script>
@@ -20,7 +20,9 @@
     <title>Richard Hofmeister @ people.redhat.com</title>
 
     <!-- Red Hat Icon -->
-    <link rel="icon" href="https://igdevredhat.blob.core.windows.net/themes/dmc-igloo-production-theme/images/favicon.png" type="image/x-icon">
+    <link rel="icon"
+        href="https://igdevredhat.blob.core.windows.net/themes/dmc-igloo-production-theme/images/favicon.png"
+        type="image/x-icon">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 
@@ -31,27 +33,37 @@
             text-align: center;
         }
 
-		table {
-			border:1px solid #b3adad;
-			border-collapse:collapse;
-			padding:5px;
-		}
-        
-		table th {
-			border:1px solid #b3adad;
-			padding:5px;
-			background: #f0f0f0;
-			color: #313030;
-		}
+        table {
+            border: 1px solid #b3adad;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        table th {
+            border: 1px solid #b3adad;
+            padding: 5px;
+            background: #f0f0f0;
+            color: #313030;
+        }
+
         table td {
-			border:1px solid #b3adad;
-			text-align:center;
-			padding:5px;
-			background: #ffffff;
-			color: #313030;
-		}
+            border: 1px solid #b3adad;
+            text-align: center;
+            padding: 5px;
+            background: #ffffff;
+            color: #313030;
+        }
 
-
+        .image-cropper {
+            width: 350px;
+            height: 350px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -59,12 +71,13 @@
 
     <br />
 
-    <p class="centered">
-        <img src="3453275770669116502.jpg" width="313" height="300">
+    <p class="centered, image-cropper">
+        <img src="3453275770669116502.jpg" class="rounded">
     </p>
     <h1 class="centered">Richard Hofmeister</h1>
     <h4 class="centered">Senior App Dev Solutions Architect :: hofmeister@redhat.com :: 517-927-6303</h4>
-    <h4 class="centered">LinkedIn :: <a href="https://www.linkedin.com/in/richard-hofmeister/">Richard Hofmeister</a></h4>
+    <h4 class="centered">LinkedIn :: <a href="https://www.linkedin.com/in/richard-hofmeister/">Richard Hofmeister</a>
+    </h4>
 
     <hr />
 
@@ -81,84 +94,87 @@
           </div>
         </div>
       </div> -->
-                            
-        
+
+
     <!-- <script src="js/b.js"></script> -->
 
-    <br/>
+    <br />
 
     <table class="table">
         <tr>
-           <th>Quarter</th>
-           <th>Speaker</th>
-           <th>Topic</th>
-           <th>Slide Deck</th>
+            <th>Quarter</th>
+            <th>Speaker</th>
+            <th>Topic</th>
+            <th>Slide Deck</th>
         </tr>
         <tr>
-           <td rowspan = "6">Q4 - 2022</td>
+            <td rowspan="6">Q4 - 2022</td>
         </tr>
         <tr>
-           <td>Richard Hofmeister</td>
-           <td>Agenda</td>
-           <td>pdf</td>
+            <td>Richard Hofmeister</td>
+            <td>Agenda</td>
+            <td>pdf</td>
         </tr>
-         <tr>
+        <tr>
             <td>Brian Dumont</td>
             <td>Using the Insights API to apply Compliance Profiles</td>
             <td>pdf</td>
-         </tr>
-         <tr>
+        </tr>
+        <tr>
             <td>Richard Hofmeister</td>
             <td>Application Modernization With Konveyor</td>
             <td>pdf</td>
-         </tr>
-         <tr>
+        </tr>
+        <tr>
             <td>Patrick Regan</td>
             <td>What's New in RHEL 9</td>
             <td>pdf</td>
-         </tr>
-         <tr>
+        </tr>
+        <tr>
             <td>Brad Krumme</td>
             <td>Enterprise Architecture Patterns</td>
             <td>pdf</td>
-         </tr>
+        </tr>
 
         <tr>
-           <th>Quarter</th>
-           <th>Speaker</th>
-           <th>Topic</th>
-           <th>Slide Deck</th>
+            <th>Quarter</th>
+            <th>Speaker</th>
+            <th>Topic</th>
+            <th>Slide Deck</th>
         </tr>
-         <tr>
-            <td rowspan = "6">Q3 - 2022</td>
-         </tr>
-         <tr>
-             <td>Brian Dumont</td>
-             <td>Enterprise Automation</td>
-             <td><a href="rhug/q3.2022/EA LnL - Enterprise Automation - RHUG.pdf">pdf</a></td>
-          </tr>
-          <tr>
-             <td>Alan Patrick</td>
-             <td>Red Hat Satellite</td>
-             <td>pdf</td>
-          </tr>
-          <tr>
-             <td>Jay Ryan</td>
-             <td>Managing Complex Workloads in a Kubernetes Native Environment</td>
-             <td><a href="rhug/q3.2022/Managing complex workloads in a Kubernetes native environment - simply and at scale.pdf">pdf</a></td>
-          </tr>
-          <tr>
+        <tr>
+            <td rowspan="6">Q3 - 2022</td>
+        </tr>
+        <tr>
+            <td>Brian Dumont</td>
+            <td>Enterprise Automation</td>
+            <td><a href="rhug/q3.2022/EA LnL - Enterprise Automation - RHUG.pdf">pdf</a></td>
+        </tr>
+        <tr>
+            <td>Alan Patrick</td>
+            <td>Red Hat Satellite</td>
+            <td>pdf</td>
+        </tr>
+        <tr>
+            <td>Jay Ryan</td>
+            <td>Managing Complex Workloads in a Kubernetes Native Environment</td>
+            <td><a
+                    href="rhug/q3.2022/Managing complex workloads in a Kubernetes native environment - simply and at scale.pdf">pdf</a>
+            </td>
+        </tr>
+        <tr>
             <td>David Brugger</td>
             <td>Empowering Event Driven Architectures Across the Hybrid Cloud</td>
             <td><a href="rhug/q3.2022/RHUG Event Driven Architecture, July 2022.pdf">pdf</a></td>
-         </tr>
-         <tr>
+        </tr>
+        <tr>
             <td>Andy Block</td>
             <td>Introduction to GitOps and Secrets Management</td>
             <td><a href="rhug/q3.2022/GitOps and Secrets Management.pdf">pdf</a></td>
-         </tr>
-        
+        </tr>
+
     </table>
 
 </body>
+
 </html>
