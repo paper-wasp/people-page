@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=”utf-8”>
+
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src=”js/bootstrap.js”></script>
+
+    <script>
+        $(function () {
+            var includes = $('[data-include]')
+            $.each(includes, function () {
+                var file = 'views/' + $(this).data('include') + '.html'
+                $(this).load(file)
+            })
+        })
+    </script>
+
+    <title>Richard Hofmeister @ people.redhat.com</title>
+
+    <!-- Red Hat Icon -->
+    <link rel="icon"
+        href="https://igdevredhat.blob.core.windows.net/themes/dmc-igloo-production-theme/images/favicon.png"
+        type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <style>
+        .centered {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        table th {
+            border: 1px solid #b3adad;
+            padding: 5px;
+            background: #f0f0f0;
+            color: #313030;
+        }
+
+        table td {
+            border: 1px solid #b3adad;
+            text-align: center;
+            padding: 5px;
+            background: #ffffff;
+            color: #313030;
+        }
+
+        .image-cropper {
+            width: 350px;
+            height: 350px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <br />
+
+    <p class="centered, image-cropper">
+        <img src="icons/Red_Hat_logo.svg.png" class="rounded">
+    </p>
+    <h1 class="centered">Red Hat Central Lunch and Learn Series</h1>
+    <h4 class="centered">Senior App Dev Solutions Architect :: hofmeister@redhat.com</h4>
+    <h4 class="centered">LinkedIn :: <a href="https://www.linkedin.com/in/richard-hofmeister/">Richard Hofmeister</a>
+    </h4>
+
+    <!-- <hr />
+
+    <h1 class="centered"><a href="https://forms.gle/YtNSiKGpqn5yLso58" target="_blank">Give Us Feedback</a></h1>
+
+    <hr /> -->
+
+    <br />
+
+    <table class="table" style="border-top-style:solid; border-width:1.1px;">
+        <tr>
+            <th>Speaker</th>
+            <th>Topic</th>
+            <th>Recording</th>
+            <th>Slide Deck</th>
+        </tr>
+        <tr>
+            <td>Javier Ochoa & Shane Rowley</td>
+            <td>Domain Driven Design</td>
+            <td>Recording</td>
+            <td>Slides</td>
+            <!-- <td><a href="lunch-n-learn/recordings/temp">Recording</a></td>
+            <td><a href="lunch-n-learn/slides/temp">Slides</a></td> -->
+        </tr>
+        <tr>
+            <td>Stephen Nimmo</td>
+            <td>Integration Layers</td>
+            <td>Recording</td>
+            <td>Slides</td>
+            <!-- <td><a href="lunch-n-learn/recordings/temp">Recording</a></td>
+            <td><a href="lunch-n-learn/slides/temp">Slides</a></td> -->
+        </tr>
+        <tr>
+            <td>Eric Deandrea</td>
+            <td>Best Practices for Container Based Design</td>
+            <td>Recording</td>
+            <td>Slides</td>
+            <!-- <td><a href="rhug/q1.2023/2023 Q1 RHUG Intro and Agenda.pdf">Slides</a></td> -->
+            <!-- <td><a href="lunch-n-learn/recordings/temp">Recording</a></td>
+            <td><a href="lunch-n-learn/slides/temp">Slides</a></td> -->
+        </tr>
+        <tr>
+            <td>Dean Peterson</td>
+            <td>Bridging the Gap Between Developers and Operations with Source to Image</td>
+            <td>Recording</td>
+            <td>Slides</td>
+            <!-- <td><a href="lunch-n-learn/recordings/temp">Recording</a></td>
+            <td><a href="lunch-n-learn/slides/temp">Slides</a></td> -->
+        </tr>
+        <tr>
+            <td>Richard Hofmeister</td>
+            <td>Getting Started with the Migration Toolkit</td>
+            <td>Recording</td>
+            <td>Slides</td>
+            <!-- <td><a href="lunch-n-learn/recordings/temp">Recording</a></td>
+            <td><a href="lunch-n-learn/slides/temp">Slides</a></td> -->
+        </tr>
+
+
+    </table>
+
+</body>
+
+</html>
